@@ -1,0 +1,15 @@
+{
+	"needs_privileged_because": "uses device like `/dev/hidraw6` which usually belongs to `root:root` and has mode `crw-------`",
+	"usage_examples": [
+		{
+			"title": "List paired devices",
+			"cmd": "list",
+			"example_output": "Devices count: 2\nConnected devices:\nidx=1\tTrackball\tMX Ergo\nidx=2\tKeyboard\tK540/K545"
+		},
+		{
+			"title": "Pair a device",
+			"cmd": "pair",
+			"example_output": "Please turn your wireless device off and on to start pairing.\nFound new device, id=0x02 Keyboard"
+		}
+	]
+}

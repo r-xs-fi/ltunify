@@ -1,8 +1,30 @@
 Container image for ltunify - tool for working with Logitech Unifying receivers and devices.
 
 ## Usage
+
+### List paired devices
+
 ```shell
-docker run --rm -it ghcr.io/r-xs-fi/ltunify
+docker run --rm -it --privileged ghcr.io/r-xs-fi/ltunify list
+```
+
+Outputs:
+```console
+Devices count: 2
+Connected devices:
+idx=1	Trackball	MX Ergo
+idx=2	Keyboard	K540/K545
+```
+### Pair a device
+
+```shell
+docker run --rm -it --privileged ghcr.io/r-xs-fi/ltunify pair
+```
+
+Outputs:
+```console
+Please turn your wireless device off and on to start pairing.
+Found new device, id=0x02 Keyboard
 ```
 
 ## Supported platforms
