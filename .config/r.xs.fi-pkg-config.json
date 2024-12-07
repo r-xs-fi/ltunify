@@ -1,4 +1,5 @@
 {
+	"supply_chain_descriptor": "alpine-package:ltunify",
 	"needs_privileged_because": "uses device like `/dev/hidraw6` which usually belongs to `root:root` and has mode `crw-------`",
 	"usage_examples": [
 		{
